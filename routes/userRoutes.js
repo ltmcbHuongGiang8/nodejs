@@ -20,13 +20,6 @@ router.post("/send-verification-code", userController.sendVerificationCode);
 // Xác thực mã OTP
 router.post("/verify-code", userController.verifyCode);
 
-// Lấy thông tin người dùng
-router.get("/:id", userController.getUser);
 
-// Cập nhật thông tin người dùng
-router.put("/:id", userController.updateUser);
-
-// Xóa người dùng
-router.delete("/:id", userController.deleteUser);
 
 module.exports = router;
